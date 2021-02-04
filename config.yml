@@ -1,0 +1,16 @@
+title: My world.
+description: To learn about cyber security
+template:
+  repo: my-world.-template
+  name: my-world.
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
